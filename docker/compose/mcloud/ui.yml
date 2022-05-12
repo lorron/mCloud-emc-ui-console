@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+    mcloud-ui:
+        image: mcloud-ui-console:1.1.0
+        container_name: mcloud-ui-console
+        build:
+            context: ../../context
+            dockerfile: Dockerfile
+        ports:
+            - "8000:8000"
